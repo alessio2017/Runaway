@@ -1,0 +1,5 @@
+Per l'app ricorda che se una gara viene eliminata, questa e' associata ad un messaggio di errore (magari causa di deletion)
+Ma come faccio a collegarlo ad una gara che è stata eliminata ?
+Forse è meglio fare una tabella alla quale tutti vanno a fare un check appena si connettono. Ad esempio fai la get per vedere se tra le gare a cui sei iscritto c'e' una nuova notifica. Si puo' chiamare
+notificaGara la tabella, e quindi si comporta come un attributo multiplo
+QUINDI NON FAI VERAMENTE UNA DELETE, MA SOLO FLAGGHI POICHE' UNA GARA ELIMINATA POTREBBE TORNARE DISPONIBILE
