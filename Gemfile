@@ -51,8 +51,13 @@ group :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
+  gem 'rspec'
 
 end
+
+gem 'canard'
+gem 'cancancan'
+gem 'devise'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

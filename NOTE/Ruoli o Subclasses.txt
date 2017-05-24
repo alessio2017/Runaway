@@ -1,0 +1,3 @@
+Secondo me non conviene creare nuove sottoclassi e complicarci tutto se poi abbiamo i ruoli, con le loro abilità che ci da Canard e CanCanCan.
+Nel senso che tutti sono "Utente", ma che poi se sei utente speciale, hai un ruolo ben specifico che puo' permetterti di fare alcune cose.
+E' come se la vecchia variabile "type" dell'STI si sia tramutata nella variabile "role" di CanCanCan.
