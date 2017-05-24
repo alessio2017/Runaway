@@ -1,0 +1,1 @@
+Ricordiamoci di fare i seed per il DB, cosicche' il professore possa testarta senza dover inserire a mano commenti e roba varia.
