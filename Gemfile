@@ -58,6 +58,9 @@ end
 gem 'canard'
 gem 'cancancan'
 gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'bcrypt'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
