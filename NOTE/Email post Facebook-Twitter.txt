@@ -1,0 +1,2 @@
+Dopo la registrazione con Fb Tw, possiamo creare una form per far inserire all'utente una email + password (c'e' un metodo in devise per poi fare il check della mail anche se provider != null)
+così, il giorno in cui Facebook o Twitter sono down, lui puo' connettersi con altre credenziali (Doppio metodo di accesso...nuova Feature) 

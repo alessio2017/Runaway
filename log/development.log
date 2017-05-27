@@ -3478,3 +3478,492 @@ Processing by Devise::RegistrationsController#create as HTML
 Completed 200 OK in 520ms (Views: 232.6ms | ActiveRecord: 0.0ms)
 
 
+DEPRECATION WARNING: to_prepare is deprecated and will be removed from Rails 5.1 (use ActiveSupport::Reloader.to_prepare instead) (called from <top (required)> at C:/Users/Valerio/Documents/GitHub/Runaway/config/environment.rb:5)
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at C:/Users/Valerio/Documents/GitHub/Runaway/app/models/application_record.rb:1)
+Started GET "/" for ::1 at 2017-05-27 08:21:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (16.0ms)
+Completed 200 OK in 704ms (Views: 688.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:21:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (4.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (236.0ms)
+Completed 200 OK in 440ms (Views: 400.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-05-27 08:21:54 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dzMeUUExBKnqxNuXoRIciqFrHsxkhKaSZNLRgQ+nEXhxdsumvujxxtT3f85YS++waBVf5ERV0o26XVZPn8J+JA==", "user"=>{"email"=>"colitta.valerio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "colitta.valerio@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 308ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:21:54 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:22:49 +0200
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:22:49 +0200
+Processing by Devise::SessionsController#destroy as HTML
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WPqUqybLW4h2YgS+UjKOdNUs3eCNyvWDKsA/Lc1uxsreFviUV1QJ3F/MaGCUV4Gg/7x0PAJycS+Qs3tXJyiCWQ=="}
+  Parameters: {"authenticity_token"=>"WPqUqybLW4h2YgS+UjKOdNUs3eCNyvWDKsA/Lc1uxsreFviUV1QJ3F/MaGCUV4Gg/7x0PAJycS+Qs3tXJyiCWQ=="}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:22:49 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 110.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:23:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 224ms (Views: 224.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2017-05-27 08:23:13 +0200
+Started GET "/users/auth/facebook" for ::1 at 2017-05-27 08:23:14 +0200
+Started GET "/users/auth/facebook/callback?code=AQDu63yNdjc_7JGdoRM3sqkfxsNP8oKotbSvm1GAHRq4HgXqTG9wjK7rpzVLhnQIBoPE7Gb7LtjdbT3kthVB5oLfleVT7RWHy1-SbpSOZr4MWNsXLqBjbXjdI6FsH9c0oY36OAFjo9DDcqbcwwYdi9DO4_pssKfwChtReRt-c4qsDE5nLAqToFysw8xGJ2VaEq73G9Lu7bbEnsl5ewYZPCOzipm5B5sb7e8pbkvxwMIhlyjdELYWeiiat4AR-0M2S2l_VUgbzB5kGolXXl7viP71N6nJAwawMZx3hkhRwQxZE3pd4xGPu-NCFzc7Rm-ZpPUJu-TyIKwrpu-xToV5GBG-&state=5d88d0c2d616d57b066aceb52a8b516e2fe4c85c51380dd3" for ::1 at 2017-05-27 08:23:14 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDu63yNdjc_7JGdoRM3sqkfxsNP8oKotbSvm1GAHRq4HgXqTG9wjK7rpzVLhnQIBoPE7Gb7LtjdbT3kthVB5oLfleVT7RWHy1-SbpSOZr4MWNsXLqBjbXjdI6FsH9c0oY36OAFjo9DDcqbcwwYdi9DO4_pssKfwChtReRt-c4qsDE5nLAqToFysw8xGJ2VaEq73G9Lu7bbEnsl5ewYZPCOzipm5B5sb7e8pbkvxwMIhlyjdELYWeiiat4AR-0M2S2l_VUgbzB5kGolXXl7viP71N6nJAwawMZx3hkhRwQxZE3pd4xGPu-NCFzc7Rm-ZpPUJu-TyIKwrpu-xToV5GBG-", "state"=>"5d88d0c2d616d57b066aceb52a8b516e2fe4c85c51380dd3"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "1419858008071482"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:23:15 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 140ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-27 08:23:15 +0200
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-27 08:23:15 +0200
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-27 08:23:15 +0200
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-27 08:23:15 +0200
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-27 08:23:15 +0200
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:24:07 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wSy4JJ9T49rEehVPQDHw4eO/QDt97FP8Ts9klb0LRccrzngooGO6z2WLr9RA5DtlGHkNepYO/UkocCjtAxf4Mg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:24:07 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 140ms (Views: 119.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:24:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (4.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 240ms (Views: 236.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-05-27 08:24:16 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2Sdn6FbbNC58o9VxtXDFlpCpczFyqZ2Xjh8TX/5DEhviHJYQBKPxLvQOwnNazLtuTOSaW4DOuuH5kioXdM3EiQ==", "user"=>{"email"=>"colitta.valerio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "colitta.valerio@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 280ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:24:16 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:24:17 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dg+Y8j6EbJNc63VjPzsHM1Huz4Z6WahTRasHov5WG/e/q0d/2mplmzbcuoQiUkzaR0axxoIMAE+2+5yTf5j3eg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:24:17 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 136ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2017-05-27 08:24:36 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (4.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/registrations/new.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 224ms (Views: 220.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/twitter" for ::1 at 2017-05-27 08:26:11 +0200
+Started GET "/users/auth/twitter" for ::1 at 2017-05-27 08:26:12 +0200
+Started GET "/users/auth/twitter/callback?oauth_token=2AGSdgAAAAAA02TSAAABXEiVdXg&oauth_verifier=elIXs3oHRG8ijMixlHxmBFzryPalS96y" for ::1 at 2017-05-27 08:26:13 +0200
+Processing by Users::OmniauthCallbacksController#twitter as HTML
+  Parameters: {"oauth_token"=>"2AGSdgAAAAAA02TSAAABXEiVdXg", "oauth_verifier"=>"elIXs3oHRG8ijMixlHxmBFzryPalS96y"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "twitter"], ["uid", "868125380330364929"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:26:15 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 144ms (Views: 118.4ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:26:41 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"G48pR36BdmMlehKAGGUDYVV3UGPI/HSxI55rrrVcqCFYO9Yl1ZBwzQi0r964cnTZLDl+wycVJ0L/CdZFeMWXog=="}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:26:41 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (4.0ms)
+Completed 200 OK in 132ms (Views: 111.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:26:46 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 220ms (Views: 221.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for ::1 at 2017-05-27 08:26:52 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/passwords/new.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 257ms (Views: 211.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for ::1 at 2017-05-27 08:26:57 +0200
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NcLtk4l8KaTh6yBHQCB3jXVekKQdWUhxHbrZK/RWdUPy9Ql+3eotPeKb2xXbNjIiI/o1z+inRtZ5CWm7GYrdag==", "user"=>{"email"=>"colitta.valerio@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "colitta.valerio@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."reset_password_token" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["reset_password_token", "42b0cbd108ce8b8c6b84d13a35c1c2fc71fa3906a8cfa5bca1ea85d3f8b32a15"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = ?, "reset_password_sent_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["reset_password_token", "42b0cbd108ce8b8c6b84d13a35c1c2fc71fa3906a8cfa5bca1ea85d3f8b32a15"], ["reset_password_sent_at", "2017-05-27 06:26:57.404801"], ["updated_at", "2017-05-27 06:26:57.404801"], ["id", 4]]
+  [1m[35m (104.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/mailer/reset_password_instructions.html.erb
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/mailer/reset_password_instructions.html.erb (0.0ms)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 1032.1ms
+Sent mail to colitta.valerio@gmail.com (2088.2ms)
+Date: Sat, 27 May 2017 08:26:59 +0200
+From: Runaway no-reply@runaway.com
+Reply-To: Runaway no-reply@runaway.com
+To: colitta.valerio@gmail.com
+Message-ID: <59291c33a5461_20045ab4f289752c@DESKTOP-S30N0R1.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello colitta.valerio@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=NND7d25EoxexoMLPmmXF">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 4684ms (ActiveRecord: 108.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:27:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (4.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 220ms (Views: 219.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-05-27 08:28:50 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7hAUHnz0VggKpeTzEfuLjIF4AwjHJGhPuiORWJqAdfwpJ/DzKGJSkQnVH6GK7c4j19ymYzLaZujekCHId1zd1Q==", "user"=>{"email"=>"colitta.valerio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "colitta.valerio@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:28:51 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 148ms (Views: 125.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:33:59 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Wn4UUb9v22thKKMLp2wXpmAJxykwZ+5N4yGCRVSZ+HiiEfRQEyY88FFyuJFp4SOahI2R9aPhcR1fwe6SoWvbIA=="}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:33:59 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 136ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:34:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 224ms (Views: 219.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2017-05-27 08:34:07 +0200
+Started GET "/users/auth/facebook" for ::1 at 2017-05-27 08:34:07 +0200
+Started GET "/users/auth/facebook/callback?code=AQCkfMlIYumnXzyeqdxFoArRMKSS4pfGhvnfK7xCK2TrgvwxHxLFo_tbehSdAkq-2ZSyD3saB1hUJg-tEYao_eZu1QmTuvgDEy01mPt0_0mg4EB3Hi0oyAl6ohDU47Rz0RjFbRT-zYBJ116x-zQiX7iAr4JNV08hrBcEi4ufI9_RVFRq-P4ZB3awAKU3Dfyig7ORZkrXdfMShbZRCSIOwqBik25RVtBz_X7FDypTPf-1LoPB4MrpJdfi1AzaitHdg7Nz6DMkjHLzECEKUd5-8Aa5yOAnnFir6sVUCJBjefd104aGdE_shSZd9kQrRYgJH7Y&state=dfb6be3ab358e32a92c4edcbdcb792719031f24036172be3" for ::1 at 2017-05-27 08:34:17 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCkfMlIYumnXzyeqdxFoArRMKSS4pfGhvnfK7xCK2TrgvwxHxLFo_tbehSdAkq-2ZSyD3saB1hUJg-tEYao_eZu1QmTuvgDEy01mPt0_0mg4EB3Hi0oyAl6ohDU47Rz0RjFbRT-zYBJ116x-zQiX7iAr4JNV08hrBcEi4ufI9_RVFRq-P4ZB3awAKU3Dfyig7ORZkrXdfMShbZRCSIOwqBik25RVtBz_X7FDypTPf-1LoPB4MrpJdfi1AzaitHdg7Nz6DMkjHLzECEKUd5-8Aa5yOAnnFir6sVUCJBjefd104aGdE_shSZd9kQrRYgJH7Y", "state"=>"dfb6be3ab358e32a92c4edcbdcb792719031f24036172be3"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10212943615535590"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:34:18 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 132ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:00 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 115.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:07 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 140ms (Views: 117.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:38 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 113.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:41 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 132ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:43 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:43 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 140ms (Views: 118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:43 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:44 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 140ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:38:53 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZD5liO+YQNfoxn+dsLcW9VEYFG1yCFsuDWNPcwVgdEJYx/GKvGODFw8bWXuy45GT2+rtosIJGRYQZjjBPG6Ehg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:38:53 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:39:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 220ms (Views: 220.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/auth/facebook" for ::1 at 2017-05-27 08:39:02 +0200
+Started GET "/users/auth/facebook" for ::1 at 2017-05-27 08:39:02 +0200
+Started GET "/users/auth/facebook/callback?code=AQDWbMk9qBmH3579P2iQDF9y0qEZJi0wOUqRPQ_kRHzJz2K1ZC-vZr445wHFJHph97lr93dobOIG7CUpPzMzwYVFrdt4zm-G3wA7RCLK-oBsvdAbEsKK1thlPSDCtnutwF3ljaRClsRiW6hHaWbJyou1bqOjHCzZLeSy48eZ6SFfM2aMX1ofrMY-riWKVqshiiBE619LqI_cWJ6XMjjyHy9d-fupf0vftO3WHIK1uYtERs0l63mlEfk1zWiUmCzqHXr-iF4yQ8-bNzzf-z6Qf9iNOcvEHGv5y_QToMCGDmxsfdjLbvp8QedaY_IzJRCcxk4&state=ec8470be0b94b2684f50dae9dd882fac379530d58af80bfc" for ::1 at 2017-05-27 08:39:03 +0200
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDWbMk9qBmH3579P2iQDF9y0qEZJi0wOUqRPQ_kRHzJz2K1ZC-vZr445wHFJHph97lr93dobOIG7CUpPzMzwYVFrdt4zm-G3wA7RCLK-oBsvdAbEsKK1thlPSDCtnutwF3ljaRClsRiW6hHaWbJyou1bqOjHCzZLeSy48eZ6SFfM2aMX1ofrMY-riWKVqshiiBE619LqI_cWJ6XMjjyHy9d-fupf0vftO3WHIK1uYtERs0l63mlEfk1zWiUmCzqHXr-iF4yQ8-bNzzf-z6Qf9iNOcvEHGv5y_QToMCGDmxsfdjLbvp8QedaY_IzJRCcxk4", "state"=>"ec8470be0b94b2684f50dae9dd882fac379530d58af80bfc"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["provider", "facebook"], ["uid", "10212943615535590"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:39:03 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 132ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2017-05-27 08:39:03 +0200
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2017-05-27 08:39:03 +0200
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2017-05-27 08:39:03 +0200
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2017-05-27 08:39:03 +0200
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for ::1 at 2017-05-27 08:39:03 +0200
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:39:08 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q0EBkscPOG0+qWYS7lJ7tVQUmH/BwaTDbXpjTawfX3vc0uK1BjJa2+R4QMQQxGC2nWDS7gGip7PDKM9h/O791A=="}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:39:08 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2017-05-27 08:39:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/shared/_links.html.erb (0.0ms)
+  Rendered C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/devise-4.3.0/app/views/devise/sessions/new.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 220ms (Views: 216.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2017-05-27 08:39:26 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IC/U8K2XPra2HXHhtIWgf17oZ510Hst5T4fFLwpJajhSohVnqEwa9DST3vDi1N5cpt8cCsNqB2jNcMJKQeT7kQ==", "user"=>{"email"=>"colitta.valerio@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "colitta.valerio@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 280ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:39:26 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 110.9ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2017-05-27 08:39:29 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JvPQdZOWjpVwKsSU3dnUWiqhg70m3Lm3R4JvlULrkB7w4ZZGku26ZznaVU952mCChOxseZrep/V54R445WkbvQ=="}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:39:29 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (0.0ms)
+Completed 200 OK in 128ms (Views: 105.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-05-27 08:48:48 +0200
+Processing by UsersController#index as HTML
+  Rendering users/index.erb within layouts/application
+  Rendered users/index.erb within layouts/application (1.0ms)
+Completed 200 OK in 128ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
