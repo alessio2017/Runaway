@@ -1,5 +1,22 @@
 == README
 
+##Usare Devise
+Per ora posizionarsi sul branch Devlopment con il comando : git checkout Development
+Per poter far funzionare il login tramite Facebook/Twitter c'è bisogno di impostare alcune variabili d'ambiente sul proprio server, in questo caso, il proprio pc. (Per i valori contattatemi in privato).
+* FACEBOOK_ID
+* FACEBOOK_SECRET
+* TWITTER_ID
+* TWITTER_SECRET
+
+Una volta settate queste variabili sarà possibile fare il login tramite facebook.
+Se ricevi l'errore SSL_CERTIFICATE, questo significa che c'è da aggiungere un'altra variabile d'ambiene. SSL_CERT_FILE. Contattatemi
+
+##Prima volta con Rails
+Se è la prima volta che si usa l'applicazione, conviene:
+* Lanciare il comando "bundle install" dalla cartella Runaway
+* Eseguire "rake db:migrate"
+
+-----------------------------------------------------------------------------------------
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
