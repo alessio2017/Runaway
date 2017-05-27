@@ -1,6 +1,6 @@
 == README
 
-##Usare Devise
+=Usare Devise
 Per ora posizionarsi sul branch Devlopment con il comando : git checkout Development
 Per poter far funzionare il login tramite Facebook/Twitter c'è bisogno di impostare alcune variabili d'ambiente sul proprio server, in questo caso, il proprio pc. (Per i valori contattatemi in privato).
 * FACEBOOK_ID
