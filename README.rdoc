@@ -11,7 +11,7 @@ Per poter far funzionare il login tramite Facebook/Twitter c'è bisogno di impos
 Una volta settate queste variabili sarà possibile fare il login tramite facebook.
 Se ricevi l'errore SSL_CERTIFICATE, questo significa che c'è da aggiungere un'altra variabile d'ambiene. SSL_CERT_FILE. Contattatemi
 
-##Prima volta con Rails
+=Prima volta con Rails
 Se è la prima volta che si usa l'applicazione, conviene:
 * Lanciare il comando "bundle install" dalla cartella Runaway
 * Eseguire "rake db:migrate"
